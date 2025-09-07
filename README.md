@@ -1,5 +1,5 @@
-# 📘 DSA-Solutions (C Programs)
-This repository contains my implementations of **Data Structures and Algorithms (DSA)** problems in **C language**.  
+# 📘 DSA-Solutions (C & Java Programs)
+This repository contains my implementations of **Data Structures and Algorithms (DSA)** problems in **C & Java language**.  
 Each file focuses on a specific problem or concept, such as arrays, linked lists, trees, dynamic programming, etc.
 
 ## 🔹 Structure
@@ -9,14 +9,25 @@ Each file focuses on a specific problem or concept, such as arrays, linked lists
 
 ---
 
-## 🔹 How to Compile and Run
+## 🔹 How to Compile and Run C
 
 1. Open terminal inside the repo folder.
 2. Compile a program:
    ```bash
    gcc filename.c -o filename
+ 3. Run:
+   ```bash
+   filename.exe
 
+## 🔹 How to Compile and Run C
 
+1. Open terminal inside the repo folder.
+2. Compile a program:
+   ```bash
+   javac filename.java
+3. Run:
+   ```bash
+   java filename
 
 **"Two Sum IV - Input is a BST"**
 Given the root of a binary search tree and an integer k, return true if there exist two elements in the BST such that their sum is equal to k, or false otherwise.
@@ -26,12 +37,19 @@ Build a BST from user input.
 Search for two numbers that add up to a target sum.
 Returns TRUE if such a pair exists, otherwise FALSE.
 
-HOW TO RUN
+HOW TO RUN in C
 1. Open a terminal in the project folder
 2. Compile the program:
     gcc BST_KEYSUM.C -o BST_KEYSUM
 3. Run the executable:
     .\BST_KEYSUM
+
+HOW TO RUN in Java
+1. Open a terminal in the project folder
+2. Compile the program:
+    javac BST_KEYSUM.java
+3. Run the executable:
+    java BST_KEYSUM
 
 CONCEPTS USED
 1. Binary Search Tree
