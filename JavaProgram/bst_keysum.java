@@ -8,19 +8,19 @@ class Node{
 //Constructor to create a new node with a given value 
   Node(int x){
     val=x;
-    left=right=NULL;
+    left=right=null;
   }
 }
 //Main Class
 public class BST_KEYSUM{
   //Function to insert a value into the BST
   static Node insert(Node root,int val){
-    if(root==NULL)
+    if(root==null)
       //If tree is empty, create new node as root
       return new Node(val);
     if(val<root.val)
       //If value is amaller, insert into left subtree
-      
+      root.left=insert(root.left,val);
     else
       //If value is larger or equal, insert into right subtree
       root.right=insert(root.right,val);
@@ -29,7 +29,7 @@ public class BST_KEYSUM{
 
   //Inorder traversal: stores elements in sorted order into a list
   static void inorder(Node root,List<Integer> list){
-    if(root==NULL) return;
+    if(root==null) return;
     inorder(root.left,list);
     list.add(root.val);
     inorder(root.right,list);
@@ -60,7 +60,7 @@ public class BST_KEYSUM{
     System.out.println("Enter number of nodes: ");
     int n=sc.nextInt();
     //Built the BST by inserting nodes one by one
-    Node root=NULL;
+    Node root=null;
     System.out.println("\n Enter node values: ");
     for(int i=0;i<n;i++){
       int val=sc.nextInt();
@@ -70,7 +70,7 @@ public class BST_KEYSUM{
     System.out.print("\n Enter target sum: ");
     int k=sc.nextInt();
     //Call function and print result
-    if(findTarget(root,k)){
+    if(findTarget(root,k))
       System.out.println("TRUE!");
       else
       System.out.println("FALSE!");
