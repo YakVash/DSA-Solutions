@@ -1,7 +1,7 @@
 //Program to check if a BST contains two elements whose sum equals a given target.
 import java.util.*;
 //Node class
-class TreeNode{
+class Node{
   int val;
   Node left;
   Node right;
